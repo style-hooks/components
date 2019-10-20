@@ -10,7 +10,13 @@
   "keywords": [
     "react",
     "react component",
-    "components"
+    "components",
+    "style system",
+    "style props",
+    "style hooks",
+    "css in js",
+    "emotion",
+    "styled components"
   ],
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
@@ -43,8 +49,10 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-react": "latest",
-    "@lunde/babel-preset-es": "latest",
+    "@emotion/babel-preset-css-prop": "^10.0.17",
+    "@emotion/core": "^10.0.21",
+    "@style-hooks/babel-preset-es": "^1.0.3",
+    "@style-hooks/core": "^2.0.3",
     "@testing-library/jest-dom": "latest",
     "@testing-library/react": "latest",
     "@testing-library/react-hooks": "latest",
@@ -65,5 +73,11 @@
     "rimraf": "^2.6.3"
   },
   "dependencies": {},
-  "peerDependencies": {}
+  "peerDependencies": {
+    "@emotion/core": ">=10",
+    "@style-hooks/core": ">=2",
+    "@style-hooks/system": ">=1",
+    "prop-types": ">=15.6",
+    "react": ">=16.8"
+  }
 }
